@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* display: flex;  */
+    align-items: center;
+    justify-content: center;
+    /* min-height: 100vh; */
+    background-color: #f1f1f1;
+}
+
+
+
+.popup {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .3);
+    display: flex;
+    place-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 200ms ease-in-out opacity;
+    /* overflow: hidden; */
+    overflow: scroll;
+
+}
+
+@media only screen and (min-width: 375px) and (max-width: 812px) {
+    .popup-content {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+}
+
+.popup-content {
+    /* width: clamp(300px, 90vw, 500px);    */
+    background-color: #fff;
+    /* width: 50%; */
+    max-width: 65%;
+    height: fit-content;
+    /* left:5em; */
+    display: content;
+    /* padding: clamp(1.5rem, 100vw, 3rem); */
+    padding: 20px;
+    margin: 5%;
+    box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
+    border-radius: .5em;
+    opacity: 1;
+    transform: translateY(15%);
+    transition: 200ms ease-in-out opacity,
+        200ms ease-in-out transform;
+    position: relative;
+}
+
+.popup-content p {
+    color: black;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: auto;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.popup h1 {
+    /* position: absolute; */
+    /* top: 28rem; */
+    /* right: 37rem; */
+    line-height: 1;
+    cursor: pointer;
+    user-select: none;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    padding: 6px 9px;
+
+}
+
+.popup h2 {
+    font-size: 25px;
+}
+
+.popup h1:active {
+    transform: scale(.9);
+}
+
+.showPopup {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+@media screen and (max-width:648px) {
+    .popup-content {
+        max-width: 85%;
+        height: fit-content;
+    }
+}
