@@ -25,17 +25,13 @@ a {
 .submenu {
   list-style-type: none;
 }
-.logo {
-  font-size: 20px;
-  height: 20px;
-  width: 20px;
-  padding: 7.5px 10px 7.5px 0;
+
 }
 .logo img{
 
-  height: 49px;
-  width: 180px;
-  margin-bottom: 0px;
+  width: 210px;
+  float: left;
+  margin: 0 0 10px 0;
 
 }
 .item {
