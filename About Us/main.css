@@ -50,6 +50,7 @@ nav {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    color: #fff;
   }
   .menu li a {
     display: block;
@@ -130,7 +131,7 @@ nav {
       border: 0;
     }
     .button.secondary a {
-      background: transparent;
+      /* background: transparent; */
       border: 1px #0080ff solid;
     }
     .button a:hover {
@@ -472,7 +473,7 @@ nav {
 
 body {
   /* font: 300 13px/1.6 Roboto, Helvetica, Arial; */
-  color: #444;
+  /* color: rgb(255, 255, 255); */
   position: relative;
   background: #448AFF;
   height: 100vh;
@@ -682,7 +683,7 @@ body{
   .footer-col h4::before{
   content: '';
   position: absolute;
-  left:0;
+  /* left: 0px ; */
   bottom: -10px;
   background-color: #ffffff;
   height: 2px;
